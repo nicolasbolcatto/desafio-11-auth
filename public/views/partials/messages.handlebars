@@ -1,0 +1,42 @@
+<div class="bg-light m-auto w-50 rounded p-3 mt-3 mb-3">
+    <h2 class="text-center fw-bold text-danger">Centro de mensajes</h2>
+</div>
+
+<div class="bg-light m-auto w-50 rounded p-3 mt-3 mb-3">
+    <form action="/api/productos-test" method="POST" >
+        <div class="m-3">
+            <label class="fw-bold fs-5" for="email">Ingrese e-mail:</label>
+            <input class="w-75" type="email" name="email" id="email">
+        </div>
+        <div class="m-3">
+            <label class="fw-bold fs-5" for="name">Ingrese nombre:</label>
+            <input class="w-75" type="text" name="name" id="name">
+        </div>
+        <div class="m-3">
+            <label class="fw-bold fs-5" for="surname">Ingrese apellido:</label>
+            <input class="w-75" type="text" name="surname" id="surname">
+        </div>
+        <div class="m-3">
+            <label class="fw-bold fs-5" for="age">Ingrese edad:</label>
+            <input class="w-75" type="number" name="age" id="age">
+        </div>
+        <div class="m-3">
+            <label class="fw-bold fs-5" for="alias">Ingrese alias:</label>
+            <input class="w-75" type="text" name="alias" id="alias">
+        </div>
+        <div class="m-3">
+            <label class="fw-bold fs-5" for="text">Ingrese mensaje:</label>
+            <input class="w-75" type="textarea" name="text" id="text">
+        </div>     
+        
+        <div class="text-center">
+            <button onclick=addMessage() class="text-white fw-bold fs-3 rounded p-3 m-3 btn btn-success" type="submit">Enviar mensaje</button>
+        </div>
+    </form>
+    <div id="ratio">
+        <h2>
+            Razón de compresión: {{compressionRatio}} %
+        </h2>
+        </div>
+    <div id="messages"></div>
+</div>
