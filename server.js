@@ -181,7 +181,7 @@ app.get("/fail-register", (req, res) => {
 
 app.get("/bye", (req, res) => {
     try {
-        setTimeout(() => {AAA
+        setTimeout(() => {
             res.redirect("/login")
         }, 2000)
     } catch (error) {
